@@ -1,18 +1,21 @@
-// app/not-found.tsx
 export default function NotFound() {
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-        fontFamily: "sans-serif"
-      }}
-    >
-      <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>404</h1>
-      <p>الصفحة غير موجودة أو تم حذفها.</p>
-    </div>
+    <html lang="en">
+      <body
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+          fontFamily: "sans-serif",
+          flexDirection: "column",
+          backgroundColor: "#0d1117",
+          color: "#f0f6fc",
+        }}
+      >
+        <h1 style={{ fontSize: "3rem", marginBottom: "0.5rem" }}>404</h1>
+        <p style={{ fontSize: "1.25rem" }}>Page Not Found</p>
+      </body>
+    </html>
   );
 }
