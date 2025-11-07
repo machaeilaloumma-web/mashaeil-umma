@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from '@supabase/supabase-js'; 
 
 // 🔗 إعداد Supabase
 const supabaseUrl = 'https://lwvzetqmozepumvctdnq.supabase.co';
