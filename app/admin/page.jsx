@@ -75,7 +75,7 @@ export default function AdminPage() {
   };
 
   return (
-    <div style={{ padding: '2rem', maxWidth: '600px', margin: 'auto' }}>
+    <div style={{ padding: '2rem', maxWidth: '700px', margin: 'auto' }}>
       <h1>🛍️ لوحة التحكم - BAZARO</h1>
 
       <input
@@ -131,6 +131,13 @@ export default function AdminPage() {
                 </div>
               )}
               <p>{p.description}</p>
+              <small style={{ color: '#888' }}>
+                🕒 أضيف في:{' '}
+                {p.created_at
+                  ? new Date(p.created_at).toLocaleString('ar-DZ')
+                  : 'غير متوفر'}
+              </small>
+              <br />
               <button
                 onClick={() => deleteProduct(p.id)}
                 style={{
